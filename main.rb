@@ -8,9 +8,7 @@ class Station
 
   # Может принимать поезда (по одному за раз)
   def get_train(train)
-    self.trains.push(train)
-    #@trains << train
-    puts "На станцию #{name} прибыл поезд № #{train.number}"
+    @trains << train
   end
 
   # Может возвращать список всех поездов на станции, находящиеся в текущий момент
